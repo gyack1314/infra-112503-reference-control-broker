@@ -1,0 +1,13 @@
+{"at":0,"kind":"reference","record":{"ref":"c1","scene":"closing","branch":"main","span":[90,105],"rev":1,"verified":true}}
+{"at":0,"kind":"reference","record":{"ref":"b1","scene":"closing","branch":"alternate","span":[90,105],"rev":1,"verified":true}}
+{"at":1,"kind":"command","record":{"session":"s1","id":"one","branch":"main","at_media":101,"ref":"c1","kind":"view","deadline":9}}
+{"at":2,"kind":"command","record":{"session":"s1","id":"two","branch":"main","at_media":102,"ref":"c1","kind":"view","deadline":10}}
+{"at":2,"kind":"command","record":{"session":"s2","id":"other","branch":"alternate","at_media":101,"ref":"b1","kind":"view","deadline":9}}
+{"at":3,"kind":"edge","record":{"request":"one","ref":"c1","frame":"f1","state":"ready","edge_epoch":1}}
+{"at":4,"kind":"edge","record":{"request":"two","ref":"c1","frame":"f2","state":"ready","edge_epoch":1}}
+{"at":4,"kind":"edge","record":{"request":"other","ref":"b1","frame":"fa","state":"ready","edge_epoch":1}}
+{"at":5,"kind":"display","record":{"session":"s1","frame":"f2"}}
+{"at":6,"kind":"reference","record":{"ref":"c2","scene":"closing","branch":"main","span":[90,105],"rev":2,"verified":true}}
+{"at":7,"kind":"replace","record":{"old":"c1","new":"c2"}}
+{"at":8,"kind":"resume","record":{"session":"s1","last_ack":0}}
+{"at":9,"kind":"inspect","record":{"session":"s2"}}
